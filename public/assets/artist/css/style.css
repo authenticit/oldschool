@@ -1,0 +1,1000 @@
+/* common css start  */
+
+:root {
+    --white: #fff;
+    --bg-color: #f1f3f3;
+    --bg-color-2: #eee;
+    --shadow: #0000001a;
+    --blue: #3749bb;
+    --black: #000;
+    --black-3: #333;
+    --black-4: #444;
+    --black-6: #666;
+    --black-8: #888;
+    --black-9: #999;
+    --facebook: #3B5998;
+    --twitter: #00ACEE;
+    --messenger: #006AFF;
+    --whatsapp: #25D366;
+    --linkdin: #0072B1;
+    --pinterest: #C8232C;
+    --instagram: #006AFF;
+    --gmail: #EA4335;
+    --aqua: #00ffff;
+    --outline: #00ACEE;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+ol {
+    list-style: none;
+    padding: 0;
+}
+
+body {
+    background-color: var(--bg-color);
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.art-btn button {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 400;
+    box-shadow: 1px 2px 6px var(--shadow);
+    background-color: var(--blue);
+    border-radius: 4px;
+    color: var(--white);
+    border: none;
+    padding: 5px 15px;
+    margin-top: 10px;
+}
+
+.art-btn button:hover {
+    color: var(--white);
+}
+
+
+/* common css end  */
+
+
+/* -------========= art-about page start =========------- */
+
+
+/* about section start  */
+
+.about-area {
+    margin: 30px 0;
+}
+
+.about-area .about-header h1 {
+    color: var(--black-3);
+    font-size: 40px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.about-area .about-details h2 {
+    color: var(--black-3);
+    font-size: 24px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.about-area .about-details p {
+    color: var(--black-8);
+    font-size: 18px;
+    font-weight: 400;
+    text-align: justify;
+    margin: 15px 0;
+}
+
+.about-area .about-details span {
+    color: var(--black-8);
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.about-area .about-details .share {
+    color: var(--black-3);
+    font-size: 24px;
+    font-weight: 400;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.about-area .about-details .about-share {
+    width: 100%;
+    height: 40px;
+}
+
+.about-area .about-details .about-share ul {
+    display: flex;
+}
+
+.about-area .about-details .about-share ul li {
+    margin-right: 5px;
+    transition: all linear .1s;
+}
+
+.about-area .about-details .about-share ul li:nth-child(1):hover {
+    margin-top: -5px;
+}
+
+.about-area .about-details .about-share ul li:nth-child(2):hover {
+    margin-top: -5px;
+}
+
+.about-area .about-details .about-share ul li:nth-child(3):hover {
+    margin-top: -5px;
+}
+
+.about-area .about-details .about-share ul li:nth-child(4):hover {
+    margin-top: -5px;
+}
+
+.about-area .about-details .about-share ul li:nth-child(5):hover {
+    margin-top: -5px;
+}
+
+.about-area .about-details .about-share ul li:nth-child(6):hover {
+    margin-top: -5px;
+}
+
+.about-area .about-details .about-share ul li:nth-child(7):hover {
+    margin-top: -5px;
+}
+
+.about-area .about-details .about-share ul li a {
+    color: var(--white);
+    padding: 7px 10px;
+    font-size: 13px;
+    font-weight: 500;
+    display: flex;
+    border-radius: 4px;
+    box-shadow: 0 0 4px var(--black);
+}
+
+.about-area .about-details .about-share span {
+    color: var(--white);
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.about-area .about-details .about-share a i {
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.about-area .about-details .about-share .facebook {
+    background-color: var(--facebook);
+}
+
+.about-area .about-details .about-share .messenger {
+    background-color: var(--messenger);
+}
+
+.about-area .about-details .about-share .whatsapp {
+    background-color: var(--whatsapp);
+}
+
+.about-area .about-details .about-share .gmail {
+    background-color: var(--gmail);
+}
+
+.about-area .about-details .about-share .linkedin {
+    background-color: var(--linkdin);
+}
+
+.about-area .about-details .about-share .twitter {
+    background-color: var(--twitter);
+}
+
+.about-area .about-details .about-share .pinterest {
+    background-color: var(--pinterest);
+}
+
+
+/* about-right  */
+
+.about-information {
+    margin-left: 15px;
+}
+
+.about-info-header h2 {
+    color: var(--black-3);
+    font-size: 24px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.about-profile {
+    border-radius: 4px;
+    box-shadow: 0 0 10px var(--shadow);
+    overflow: hidden;
+}
+
+.about-profile .about-profile-img {
+    width: 100%;
+    height: 280px;
+    padding: 6px;
+}
+
+.about-profile .about-profile-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about-profile .about-profile-btn {
+    text-align: center;
+    margin: 10px;
+}
+
+.about-profile .about-profile-btn a {
+    color: var(--white);
+    background-color: var(--blue);
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 7px 7px;
+}
+
+.about-profile .about-profile-content table {
+    width: 100%;
+}
+
+.about-profile .about-profile-content table td {
+    padding: 3px 10px;
+}
+
+.about-profile .about-profile-content table td strong {
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.about-area .about-profile .about-profile-content .artist-type {
+    border-top: 1px solid var(--black-9);
+    border-bottom: 1px solid var(--black-9);
+    padding: 10px;
+}
+
+
+/* right end  */
+
+
+/* about section end  */
+
+
+/* filter gellary section start  */
+
+.filter-area .container h2 {
+    color: var(--black-3);
+    font-size: 24px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    padding-left: 5px;
+}
+
+.filter-area .art-work-content {
+    padding: 20px 10px;
+}
+
+.filter-area .art-work-content a:hover {
+    color: var(--blue);
+}
+
+.filter-area .art-work-content h4 {
+    color: var(--black-3);
+    font-size: 22px;
+    font-weight: 400px;
+    transition: all linear .3s;
+}
+
+.filter-area .art-work-content h4:hover {
+    color: var(--blue);
+}
+
+.filter-area .art-work-content p {
+    color: var(--black-8);
+    font-size: 16px;
+    font-weight: 400px;
+    margin-bottom: 10px;
+}
+
+.filter-area .row,
+.row>.column {
+    padding: 8px;
+}
+
+.column {
+    display: none;
+    margin-bottom: 20px;
+    width: 24.35%;
+}
+
+.filter-area .row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* Content */
+
+#myBtnContainer {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.filter-area .content {
+    box-shadow: var(--shadow);
+    background-color: var(--white);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.filter-area .content .img {
+    height: 210px;
+    position: relative;
+    border: 5px solid var(--black);
+    padding: 30px;
+}
+
+.filter-area .content img {
+    width: 100%;
+    height: 100%;
+}
+
+.filter-area .content .overly {
+    width: 100%;
+    height: 100%;
+    background-color: var(--black);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: all linear .3s;
+}
+
+.filter-area .content .overly:hover {
+    opacity: 40%;
+    cursor: pointer;
+}
+
+.filter-area .content i {
+    background: var(--aqua);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: var(--white);
+}
+
+.show {
+    display: block;
+}
+
+.filter-area .filter-btn {
+    border: none;
+    outline: none;
+    background-color: var(--bg-color-2);
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 600;
+    margin-right: 10px;
+    padding: 8px 16px;
+    cursor: pointer;
+    box-shadow: 0 0 4px var(--shadow);
+    transition: all linear .3s
+}
+
+.filter-area .filter-btn:hover {
+    color: var(--white);
+    background-color: var(--blue);
+}
+
+.filter-area .filter-btn.active {
+    color: var(--white);
+    background-color: var(--blue);
+}
+
+
+/* filter gellary section end  */
+
+
+/* -------========= art-about page  end =========------- */
+
+
+/* -------====== all-art-details page start ======------- */
+
+
+/* artwork img zoom section */
+
+.all-art-details-area {
+    margin: 70px 0;
+}
+
+
+/* xzoom start  */
+
+.xzoom-area .xzoom-thumbs {
+    margin: 20px 0;
+    text-align: start;
+}
+
+.xzoom-area .xzoom {
+    width: 100%;
+    height: 450px;
+    box-shadow: 1px 4px 8px var(--shadow);
+}
+
+.xzoom-area .xzoom-gallery {
+    border: 1px solid var(--shadow);
+}
+
+.xzoom-area .xzoom-gallery:hover {
+    border: 1px solid var(--blue);
+    box-shadow: 1px 4px 8px var(--shadow);
+}
+
+.xzoom-area .xzoom-lens {
+    cursor: zoom-in;
+}
+
+
+/* xzoom end  */
+
+
+/* all-art-details-content */
+
+.all-art-details-area .all-art-details-header a {
+    font-size: 28px;
+    font-weight: 400;
+    color: var(--black-3);
+    letter-spacing: 2px;
+    text-align: end;
+}
+
+.all-art-details-area .all-art-details-content {
+    justify-content: end;
+}
+
+.all-art-details-area .all-art-details-content h3 {
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--black-3);
+    margin-top: 20px;
+}
+
+.all-art-details-area .all-art-details-content ul li {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--black-6);
+}
+
+.all-art-details-area .all-art-details-content ul li span {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--black-6);
+}
+
+.all-art-details-area .all-art-details-content .view-more {
+    border-top: 1px solid var(--black-9);
+}
+
+.all-art-details-area .all-art-details-content .view-more .art-details-price {
+    display: block;
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--black-3);
+    margin: 15px 0;
+}
+
+.all-art-details-area .all-art-details-content .view-more a {
+    display: inline-block;
+    background-color: var(--black-3);
+    color: var(--white);
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    border-radius: 4px;
+    padding: 6px 55px;
+    border: none;
+    transition: all linear .3s;
+}
+
+.all-art-details-area .all-art-details-content .view-more a:hover {
+    background-color: var(--blue);
+}
+
+.all-art-details-area .art-share a {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--black-3);
+    transition: all linear .3s;
+}
+
+.all-art-details-area .art-share a:hover {
+    color: var(--blue);
+}
+
+
+/* all-art-details page end */
+
+
+/* ============about the work section start  ============= */
+
+.about-work-area {
+    margin-top: 20px;
+}
+
+.about-work-area .about-work {
+    border-bottom: 1px solid var(--black-9);
+    margin-bottom: 10px;
+    padding: 10px 10px;
+}
+
+.about-work-area .about-work span {
+    border-bottom: 1px solid var(--black);
+    padding: 12px 0;
+}
+
+.about-work-area .about-work span a {
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.about-work-area .about-work-content p {
+    color: var(--black-8);
+    font-size: 16px;
+    font-weight: 400px;
+    text-align: justify;
+    border-radius: 4px;
+    border: 1px solid var(--black-3);
+    padding: 0 10px;
+    margin: 10px 0;
+}
+
+.about-work-area .about-work-details {
+    height: 500px;
+    box-shadow: 0 0 2px 2px var(--shadow);
+}
+
+.about-work-area .about-work-details .about-work-img {
+    width: 150px;
+    height: 150px;
+    align-items: center;
+    border-radius: 50%;
+    margin-left: 90px;
+    border: 5px solid var(--black-9);
+    position: relative;
+}
+
+.about-work-area .about-work-details .about-work-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+}
+
+.about-work-area .about-work-details a {
+    text-align: center;
+}
+
+.about-work-area .about-work-details h2 {
+    color: var(--black-3);
+    font-size: 24px;
+    font-weight: 400;
+    transition: all linear.3s;
+}
+
+.about-work-area .about-work-details h2:hover {
+    color: var(--blue);
+}
+
+.about-work-area .about-work-details p {
+    text-align: center;
+}
+
+.about-art-work-top {
+    border: 1px solid var(--black-3);
+    border-radius: 4px;
+}
+
+.about-art-work-top ul {
+    margin-bottom: 0;
+}
+
+.about-art-work-top .about-art-work-top-content {
+    margin-right: 100px;
+}
+
+
+/* about the work section end */
+
+
+/* ================artist-category page start================ */
+
+
+/* category start  */
+
+.artist-category-area {
+    margin: 40px 0;
+}
+
+.artist-category-area .clear-all {
+    text-align: end;
+}
+
+.artist-category-area .clear-all a {
+    color: var(--black);
+    font-size: 18px;
+    transition: all linear .3s;
+}
+
+.artist-category-area .clear-all a:hover {
+    color: var(--blue);
+}
+
+.artist-category-area .artist-category-group {
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.artist-category-area .artist-category-group span {
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.artist-category-area .items {
+    padding: 10px 13px 10px;
+    background-color: var(--white);
+}
+
+.artist-category-area label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.artist-category-area .accordion-item {
+    margin-top: 5px;
+}
+
+.artist-category-area .accordion-button:not(.collapsed) {
+    color: var(--bs-accordion-active-color);
+    background-color: transparent;
+    box-shadow: inset 0 calc(var(--bs-accordion-border-width) * -1) 0 var(--bs-accordion-border-color);
+}
+
+.artist-category-area .accordion-button:focus {
+    z-index: 3;
+    border-color: transparent;
+    box-shadow: transparent;
+    outline: none;
+    border: none;
+}
+
+.artist-category-area .accordion-button {
+    border: none;
+    outline: none;
+}
+
+
+/* category search  */
+
+.artist-category-area .accordion-body .items .category-search {
+    padding: 6px 10px;
+    width: 100%;
+    outline: none;
+    border-radius: 3px;
+    border: 1px solid #333;
+}
+
+.artist-category-area .accordion-body .items .category-search:focus {
+    outline: .5px solid var(--bs-accordion-btn-focus-border-color);
+    border: 1px solid transparent;
+}
+
+
+/* country search  */
+
+.artist-category-area .accordion-body .items .country-search {
+    padding: 6px 10px;
+    width: 100%;
+    outline: none;
+    border-radius: 3px;
+    border: 1px solid var(--black-3);
+}
+
+.artist-category-area .accordion-body .items .country-search:focus {
+    outline: .5px solid var(--blue);
+    border: 1px solid transparent;
+}
+
+.artist-category-area .accordion-button {
+    width: 100%;
+    padding: var(--bs-accordion-btn-padding-y) var(--bs-accordion-btn-padding-x);
+    font-size: 18px;
+    color: var(--bs-accordion-btn-color);
+}
+
+.artist-category-area .accordion {
+    --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='var%28--bs-body-color%29'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+    --bs-accordion-btn-active-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='var%28--bs-body-color%29'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+    --bs-accordion-btn-focus-border-color: #86b7fe;
+    --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem none;
+    --bs-accordion-active-color: #000;
+}
+
+
+/* right  */
+
+.artist-category-area .art-category {
+    box-shadow: 0 0 13px 2px var(--shadow);
+    background-color: var(--white);
+    border-radius: 4px;
+    padding: 10px;
+}
+
+.artist-category-area .art-category .art-category-img {
+    height: 210px;
+}
+
+.artist-category-area .art-category .art-category-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.artist-category-area .art-category .art-work-content {
+    margin: 10px 0 30px 0;
+}
+
+.artist-category-area .art-category .art-work-content a {
+    font-size: 18px;
+    color: var(--black-4);
+    transition: all linear .3s;
+}
+
+.artist-category-area .art-category .art-work-content a:hover {
+    color: var(--blue);
+}
+
+.artist-category-area .art-category .art-work-content p {
+    font-size: 16px;
+    color: var(--black);
+    margin-bottom: 0;
+}
+
+.artist-category-area .art-category .art-work-content span {
+    font-size: 16px;
+    color: var(--black-6);
+}
+
+
+/* ===============artist-category page end ===============*/
+
+
+/* ==============artwork-collect page start================= */
+
+.artwork-collect-area {
+    margin: 40px 0;
+}
+
+.artwork-collect-area .clear-all {
+    text-align: end;
+}
+
+.artwork-collect-area .clear-all a {
+    color: var(--black);
+    font-size: 18px;
+    transition: all linear .3s;
+}
+
+.artwork-collect-area .clear-all a:hover {
+    color: var(--blue);
+}
+
+.artwork-collect-area .artist-category-group {
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.artwork-collect-area .artist-category-group span {
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.artist-category-area .items {
+    padding: 10px 13px 10px;
+    background-color: var(--white);
+}
+
+.artwork-collect-area label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.artwork-collect-area .accordion-item {
+    margin-top: 5px;
+}
+
+.artwork-collect-area .accordion-button:not(.collapsed) {
+    color: var(--bs-accordion-active-color);
+    background-color: transparent;
+    box-shadow: inset 0 calc(var(--bs-accordion-border-width) * -1) 0 var(--bs-accordion-border-color);
+}
+
+.artwork-collect-area .accordion-button:focus {
+    z-index: 3;
+    border-color: transparent;
+    box-shadow: transparent;
+    outline: none;
+    border: none;
+}
+
+.artwork-collect-area .accordion-button {
+    border: none;
+    outline: none;
+}
+
+
+/* category search  */
+
+.artwork-collect-area .accordion-body .items .category-search {
+    padding: 6px 10px;
+    width: 100%;
+    outline: none;
+    border-radius: 3px;
+    border: 1px solid var(--black-3);
+}
+
+.artwork-collect-area .accordion-body .items .category-search:focus {
+    outline: .5px solid var(--outline);
+    border: 1px solid transparent;
+}
+
+
+/* country search  */
+
+.artwork-collect-area .accordion-body .items .country-search {
+    padding: 6px 10px;
+    width: 100%;
+    outline: none;
+    border-radius: 3px;
+    border: 1px solid var(--black-3);
+}
+
+.artwork-collect-area .accordion-body .items .country-search:focus {
+    outline: .5px solid var(--outline);
+    border: 1px solid transparent;
+}
+
+.artwork-collect-area.accordion-button {
+    width: 100%;
+    padding: var(--bs-accordion-btn-padding-y) var(--bs-accordion-btn-padding-x);
+    font-size: 18px;
+    color: var(--bs-accordion-btn-color);
+}
+
+.artwork-collect-area .accordion {
+    --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='var%28--bs-body-color%29'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+    --bs-accordion-btn-active-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='var%28--bs-body-color%29'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+    --bs-accordion-btn-focus-border-color: #86b7fe;
+    --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem none;
+    --bs-accordion-active-color: #000;
+}
+
+
+/* top category  */
+
+.artwork-collect-area .top-category-header {
+    padding: 0;
+}
+
+.artwork-collect-area .accordion-body .top-category-img {
+    width: 100%;
+    height: 130px;
+}
+
+.artwork-collect-area .accordion-body .top-category-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.artwork-collect-area .accordion-body .top-category-content {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 5px;
+}
+
+.artwork-collect-area .accordion-body .top-category-content .top-category-art a {
+    text-transform: uppercase;
+    color: var(--black-3);
+    font-size: 18px;
+    transition: all linear .3s;
+}
+
+.artwork-collect-area .accordion-body .top-category-content .top-category-art a:hover {
+    color: var(--blue);
+}
+
+.artwork-collect-area .accordion-body .top-category-content .top-category-follow a {
+    color: var(--white);
+    font-size: 16px;
+    background-color: var(--black);
+    padding: 10px 15px;
+    border-radius: 3px;
+    transition: all linear .3s;
+}
+
+.artwork-collect-area .accordion-body .top-category-content .top-category-follow a:hover {
+    background-color: var(--blue);
+}
+
+
+/* right  */
+
+.artwork-collect-area .art-category {
+    box-shadow: 0 0 13px 2px var(--shadow);
+    background-color: var(--white);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.artwork-collect-area .art-category .art-category-img {
+    height: 210px;
+    padding: 30px;
+    border: 5px solid var(--black-3);
+}
+
+.artwork-collect-area .art-category .art-category-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.artwork-collect-area .art-category .art-work-content {
+    padding: 20px 10px;
+}
+
+.artwork-collect-area .art-category .art-work-content a {
+    font-size: 22px;
+    color: var(--black-4);
+    transition: all linear .3s;
+}
+
+.artwork-collect-area .art-category .art-work-content a:hover {
+    color: var(--blue);
+}
+
+.artwork-collect-area .art-category .art-work-content p {
+    font-size: 16px;
+    color: var(--black-6);
+    margin-bottom: 0;
+}
+
+.artwork-collect-area .art-category .art-work-content span {
+    font-size: 20px;
+    color: var(--black);
+}
+
+
+/* ==============artwork-collect page end================= */
+
+.art-btn {
+    display: flex;
+    justify-content: space-between;
+}

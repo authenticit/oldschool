@@ -1,0 +1,87 @@
+<?php
+
+namespace App\Http\Controllers\Instructor;
+
+use App\Http\Controllers\Controller;
+use Illuminate\Http\Request;
+use App\Models\Admin\Book;
+use App\Models\Admin\Course;
+use Illuminate\Support\Facades\Auth;
+
+
+class InstructorBackendController extends Controller
+{
+
+    /* instructor module */
+
+    // instructor signin page
+    public function instructorSignin()
+    {
+        $data['title'] = "Gains School | Instructor Signin";
+        return view('frontend.instructor.instructor_signin', $data);
+    }
+
+    // custome instructor signin page
+    public function instructorLogin(Request $request)
+    {
+        $request->validate([
+            'phone' => 'required',
+            'password' => 'required',
+        ]);
+        $creadintials = $request->only('phone', 'password');
+        if (Auth::attempt($creadintials)) {
+            if (Auth::user()->role == 'instructor') {
+                return redirect()->route('instructor.dashboard');
+            } else {
+                return redirect('/student/signin')->with('error', 'Invalid phone number or password');
+            }
+        } else {
+            return redirect('/student/signin')->with('error', 'Invalid phone number or password');
+        }
+    }
+
+	// instructor dashboard
+    public function instructorDashboard()
+    {
+        $data['title'] = "Gains School | Instructor Dashboard";
+        return view('frontend.instructor.instructor_dashboard', $data);
+    }
+
+    // Total list of courses which is added by which instructor
+    public function instructorCourse()
+    {
+        $data['title'] = "Gains School | Instructor Course";
+        $data['courses'] = Course::where('user_id', Auth::user()->id)->get();
+
+        return view('frontend.instructor.instructor_course', $data);
+    }
+
+
+    // which instructor has which course student enrolled
+    public function instructorEnrolledStudent()
+    {
+        $data['title'] = "Gains School | Instructor Course Student";
+        $data['orders'] = Course::join('enrolled_courses', 'courses.id', '=', 'enrolled_courses.course_id')->get();
+
+        return view('frontend.instructor.instructor_enrolled_student', $data);
+    }
+
+    // which instructor has which book
+    public function instructorBook()
+    {
+        $data['title'] = "Gains School | Instructor Book";
+        $data['books'] = Book::where('user_id', Auth::user()->id)->get();
+        return view('frontend.instructor.instructor_book', $data);
+    }
+
+    // which instructor book has order
+    public function instructorBookOrder()
+    {
+        $data['title'] = "Gains School | Instructor Book Order";
+        
+        $data['orders'] = Book::join('book_orders', 'books.id', '=', 'book_orders.book_id')->get();
+        // dd($books);
+
+        return view('frontend.instructor.instructor_book_order', $data);
+    }
+}

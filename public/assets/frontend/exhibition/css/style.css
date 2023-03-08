@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    color: #2b2b2b;
+    transition: all linear .1s;
+}
+
+a:hover {
+    color: #2b2b2b;
+}
+
+h2 {
+    font-size: 28px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+.ex-card {
+    background-color: #f4f4f4;
+    box-shadow: 8px 8px 10px #bcbaba;
+    border-radius: 10px;
+    padding-bottom: 10px;
+    position: relative;
+}
+
+.ex-card .shaddow-btn {
+    position: absolute;
+    bottom: -1px;
+    right: 8px;
+    margin-bottom: 8px;
+    padding: 6px 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px #626262;
+    border: none;
+    background-color: #bcbaba;
+    color: #bcbaba;
+    font-weight: 700;
+}
+
+.ex-card .ex-button {
+    position: absolute;
+    bottom: 0px;
+    right: 8px;
+    margin-bottom: 8px;
+    padding: 6px 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: #41cba8cc;
+    font-weight: 700;
+    transition: all linear .2s;
+    z-index: 11;
+}
+
+.ex-card .ex-button:hover {
+    rotate: 10deg;
+}
+
+.ex-card .ex-img img {
+    width: 100%;
+    height: 100%;
+
+}
+
+.ex-card .ex-text {
+    text-align: center;
+
+}
+
+.ex-card .instructor {
+    display: flex;
+    margin: 8px;
+}
+
+.ex-card .instructor img {
+    width: 80px;
+    border-radius: 8px;
+}
+
+.ex-card .instructor .in-text {
+    margin-left: 10px;
+}
+
+.ex-card .instructor .in-text h3 a {
+    color: #41cba8cc;
+}
+
+.ex-card .instructor .in-text h3 a:hover {
+    color: #ba2133;
+}
+
+.ex-card .c-bottom {
+    padding-left: 8px;
+}
+
+.ex-card .c-bottom a i {
+    margin: 0 4px;
+    font-size: 18px;
+    text-shadow: 2px 2px 2px #626262;
+    transition: all linear .1s;
+}
+
+.ex-card .c-bottom a i:hover {
+    rotate: -18deg;
+    color: #41cba8cc;
+}

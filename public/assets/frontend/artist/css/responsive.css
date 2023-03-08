@@ -1,0 +1,240 @@
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+
+    .header .logo a {
+        font-size: 36px;
+    }
+
+    .header .search-area .mobile_btn {
+        display: block;
+    }
+
+    .header .logo {
+        text-align: center;
+    }
+
+    .header .search-area {
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+
+    .mobile-sidebar {
+        position: fixed;
+        width: calc(100% - 80px);
+        height: 100vh;
+        top: 0;
+        left: -400px;
+        background-color: #eee;
+        z-index: 9999;
+        visibility: hidden;
+        opacity: 0;
+        transition: all linear .150s;
+        overflow-y: scroll;
+    }
+
+    .left_sidebar .search {
+        flex-direction: column;
+        margin-top: 30px;
+    }
+
+    .left_sidebar .search input,
+    .left_sidebar .search button {
+        color: #283f4d;
+    }
+
+    .left_sidebar .search input {
+        max-width: 250px;
+    }
+
+    .left_sidebar .search .btn_area a {
+        background-color: #283f4d;
+        margin-bottom: 30px;
+        margin-left: 0;
+        margin-top: 20px;
+        font-size: 18px;
+    }
+
+    .mobile-sidebar .search {
+        position: relative;
+        top: 0;
+    }
+
+    .art_work h2 {
+        min-width: auto;
+    }
+
+
+    /* ====================================================== 
+        profile page css start
+    ======================================================   */
+
+    .right_side {
+        margin-top: 20px !important;
+    }
+
+
+    /* ====================================================== 
+        profile page css end
+    ======================================================   */
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+    .header .logo a {
+        font-size: 45px;
+    }
+
+    .header .search-area .mobile_btn {
+        display: block;
+    }
+
+
+    .header .logo {
+        text-align: center;
+    }
+
+    .header .search-area {
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+
+    .mobile-sidebar {
+        position: fixed;
+        width: 400px;
+        height: 100vh;
+        top: 0;
+        left: -400px;
+        background-color: #eee;
+        z-index: 9999;
+        visibility: hidden;
+        opacity: 0;
+        transition: all linear .150s;
+        overflow-y: scroll;
+    }
+
+    .left_sidebar .search {
+        flex-direction: column;
+        margin-top: 30px;
+    }
+
+    .left_sidebar .search input,
+    .left_sidebar .search button {
+        color: #283f4d;
+    }
+
+    .left_sidebar .search .btn_area a {
+        background-color: #283f4d;
+        margin-bottom: 30px;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .mobile-sidebar .search {
+        position: relative;
+        top: 0;
+    }
+
+    .art_work h2 {
+        min-width: auto;
+    }
+
+
+
+    /* ====================================================== 
+        profile page css start
+    ======================================================   */
+
+    .right_side {
+        margin-top: 20px !important;
+    }
+
+    /* ====================================================== 
+        profile page css end
+    ======================================================   */
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+    .header .logo a {
+        font-size: 50px;
+    }
+
+    .header .search-area .mobile_btn {
+        display: block;
+    }
+
+    .header .logo {
+        text-align: center;
+    }
+
+    .header .search-area {
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+
+    .mobile-sidebar {
+        position: fixed;
+        width: 400px;
+        height: 100vh;
+        top: 0;
+        left: -400px;
+        background-color: #eee;
+        z-index: 9999;
+        visibility: hidden;
+        opacity: 0;
+        transition: all linear .150s;
+        overflow-y: scroll;
+    }
+
+    .left_sidebar .search {
+        flex-direction: column;
+        margin-top: 30px;
+    }
+
+    .left_sidebar .search input,
+    .left_sidebar .search button {
+        color: #283f4d;
+    }
+
+    .left_sidebar .search .btn_area a {
+        background-color: #283f4d;
+        margin-bottom: 30px;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .mobile-sidebar .search {
+        position: relative;
+        top: 0;
+    }
+
+    .art_work h2 {
+        min-width: auto;
+    }
+
+
+
+
+
+
+    /* ====================================================== 
+        profile page css start
+    ======================================================   */
+
+    .right_side {
+        margin-top: 20px !important;
+    }
+
+
+    /* ====================================================== 
+        profile page css end
+    ======================================================   */
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {}

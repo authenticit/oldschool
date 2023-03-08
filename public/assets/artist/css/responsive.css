@@ -1,0 +1,188 @@
+/* =============reswponsive start ============= */
+
+
+/* about-page  start  */
+
+
+/* about area start  */
+
+@media (max-width: 768px) {
+    .about-area .about-header h1 {
+        font-size: 25px;
+        letter-spacing: 1px;
+    }
+    .about-area .about-details h2 {
+        font-size: 17px;
+        font-weight: 400;
+    }
+    .about-area .about-details p {
+        font-size: 14px;
+        margin: 11px 0;
+    }
+    .about-area .about-details span {
+        font-size: 18px;
+    }
+    .about-area .about-details .share {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .about-area .about-details .about-share span {
+        display: none;
+    }
+    .about-area .about-details .about-share ul li {
+        margin-right: 10px;
+    }
+    .about-area .about-details .about-share a i {
+        font-size: 13px;
+        margin-right: 0;
+    }
+    .about-area .about-info-header h2 {
+        font-size: 18px;
+        font-weight: 400;
+    }
+    .about-information {
+        margin-left: 0;
+    }
+    .about-area .about-profile .about-profile-content table td {
+        padding: 5px 27px;
+    }
+    .about-work-area .about-work-content p {
+        margin: 30px 0;
+    }
+}
+
+@media (max-width: 425px) {
+    .about-area .about-details .about-share ul li {
+        margin-right: 7px;
+    }
+    .about-area .about-details .about-share ul li a {
+        padding: 8px 10px;
+    }
+    .about-information {
+        margin-left: 0;
+    }
+    .about-profile .about-profile-content table td {
+        padding: 5px 10px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 375px) {
+    .about-area .about-profile .about-profile-content table td {
+        padding: 3px 15px;
+        font-size: 14px;
+    }
+    .about-profile .about-profile-content table td strong {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 320px) {
+    .about-area .about-details .about-share ul li a {
+        padding: 6px 7px;
+    }
+    .about-area .about-profile .about-profile-content table td {
+        padding: 3px 5px;
+    }
+    .about-profile .about-profile-content table td strong {
+        font-size: 14px;
+    }
+    .about-area .about-profile .about-profile-content table td {
+        padding: 3px 9px;
+        font-size: 14px;
+    }
+}
+
+
+/* about area end  */
+
+
+/* filter gallery start  */
+
+@media (max-width: 768px) {
+    .filter-area .container h2 {
+        font-size: 20px;
+    }
+    .filter-area .filter-btn {
+        font-size: 14px;
+        padding: 5px 14px;
+    }
+    .column {
+        width: 32.35%;
+    }
+    .content .img {
+        padding: 25px;
+    }
+    .filter-area .art-work-content h4 {
+        font-size: 17px;
+    }
+    .filter-area .art-work-content p {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 425px) {
+    .column {
+        width: 100.35%;
+    }
+    .filter-area .art-work-content {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 375px) {
+    .filter-area .filter-btn {
+        font-size: 12px;
+        padding: 5px 8px;
+        margin: 0 2px;
+    }
+    .filter-area .filter-btn {
+        font-size: 14px;
+        padding: 5px 8px;
+        margin: 0 2px;
+    }
+}
+
+
+/* xzoom start  */
+
+
+/* .all-art-details-page start */
+
+@media (max-width: 768px) {
+    .all-art-details-area .all-art-details-content ul li span {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 425px) {
+    .all-art-details-area .all-art-details-content .view-more a {
+        padding: 5px 25px;
+    }
+    .all-art-details-area .all-art-details-content ul li {
+        font-size: 14px;
+    }
+    .all-art-details-area .all-art-details-content .view-more .art-details-price {
+        display: block;
+        font-size: 18px;
+        font-weight: 500;
+        margin: 15px 0;
+    }
+    .all-art-details-area .all-art-details-header a {
+        font-size: 23px;
+    }
+    /* about the work  */
+    .about-art-work-top .about-art-work-top-content {
+        font-size: 15px;
+    }
+    .about-work-area .about-work-content p {
+        font-size: 14px;
+    }
+    /* profile  */
+    .about-profile .about-profile-content table td strong {
+        font-size: 14px;
+    }
+}
+
+
+/* .all-art-details-page end */

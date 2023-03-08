@@ -1,0 +1,104 @@
+@extends('layouts.admin')
+@section('title', $title)
+@section('content')
+<div class="card">
+	<div class="d-sm-flex align-items-center justify-content-between">
+	<h5 class=" mb-0 text-gray-800 pl-3">{{ __('Faq') }}</h5>
+	<ol class="breadcrumb">
+		<li class="breadcrumb-item"><a href="{{ route('dashboard') }}">{{ __('Dashboard') }}</a></li>
+		<li class="breadcrumb-item"><a href="javascript:;">{{ __('Menu Page Setting') }}</a></li>
+		<li class="breadcrumb-item"><a href="{{ route('faq.index') }}">{{ __('Faq') }}</a></li>
+	</ol>
+	</div>
+</div>
+<!-- Row -->
+<div class="row mt-3">
+  <!-- Datatables -->
+  <div class="col-lg-12">
+    <div class="heading-area">
+        <h4 class="title ml-2">
+            {{ __('Faq Page') }} :
+                <button type="button" class="btn btn-sm btn-rounded dropdown-toggle btn-{{ $gs->is_faq == 1 ? 'success' : 'danger' }}" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  {{ $gs->is_faq == 1 ? __('Activated') : __('Deactivated')}}
+                </button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item drop-change" href="javascript:;" data-status="1" data-val="{{ __('Activated') }}" data-href="" {{ $gs->is_faq == 1 ? 'selected' : '' }}>{{ __('Activate') }}</a>
+                  <a class="dropdown-item drop-change" href="javascript:;" data-status="0" data-val="{{ __('Deactivated') }}" data-href="" {{ $gs->is_faq == 0 ? 'selected' : '' }}>{{ __('Deactivate') }}</a>
+                </div>
+              
+        </h4>
+        <div class="form-group">
+        </div>
+    </div>
+	@include('includes.admin.form-success')
+	<div class="card mb-4">
+	  <div class="table-responsive p-3">
+		<table class="table align-items-center table-flush" id="geniustable">
+		  <thead class="thead-light">
+			<tr>
+          <th width="30%">{{ __('Faq Title') }}</th>
+          <th width="50%">{{ __('Faq Details') }}</th>
+          <th>{{ __('Options') }}</th>
+			</tr>
+		  </thead>
+		</table>
+	  </div>
+	</div>
+  </div>
+  <!-- DataTable with Hover -->
+</div>
+<!--Row-->
+{{-- DELETE MODAL --}}
+
+<div class="modal fade confirm-modal" id="deleteModal" tabindex="-1" role="dialog"
+aria-labelledby="deleteModalTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">{{ __("Confirm Delete") }}</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <p class="text-center">{{__("You are about to delete this Faq.")}}</p>
+          <p class="text-center">{{ __("Do you want to proceed?") }}</p>
+      </div>
+      <div class="modal-footer">
+        <a href="javascript:;" class="btn btn-secondary" data-dismiss="modal">{{ __("Cancel") }}</a>
+        <a href="javascript:;" class="btn btn-danger btn-ok">{{ __("Delete") }}</a>
+      </div>
+    </div>
+  </div>
+</div>
+{{-- DELETE MODAL ENDS --}}
+@endsection
+@section('scripts')
+{{-- DATA TABLE --}}
+    <script type="text/javascript">
+		var table = $('#geniustable').DataTable({
+			   ordering: false,
+              processing: true,
+              serverSide: true,
+              ajax: '{{ route('faq.data-tables') }}',
+              columns: [
+                      { data: 'title', name: 'title' },
+                      { data: 'details', name: 'details' },
+                { data: 'action', searchable: false, orderable: false }
+
+                    ],
+              language : {
+                
+              }
+          });
+
+    $(function() {
+          $(".btn-area").append('<div class="col-sm-12 col-md-4 pr-3 text-right">'+
+              '<a class="btn btn-primary" href="{{route('faq.create')}}">'+
+          '<i class="fas fa-plus"></i> Add New Faq'+
+          '</a>'+
+          '</div>');
+      });
+</script>
+@endsection
